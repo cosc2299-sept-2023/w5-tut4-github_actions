@@ -1,10 +1,10 @@
 # Express-Boilerplate
-This is a very basic node express application that host a web application. This aplication tries to demonstrate a creation of very simple express app and tries to create a few api's to bring some changes in data.
+This is a very simple Node Express application that serves as a web server. This application attempts to demonstrate the building of a very simple express app as well as the creation of a few api's to effect data changes.
 
 ## Pre-requisite
 
 - [Nodejs](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
-## Run The Appllication
+## Run The Application
 
 Open the project in visual studio code
 
@@ -13,6 +13,6 @@ $ npm run start
 ```
 
 ## Copyrights
-This is a public project that mean anyone can use this project for your working
+This is a public project, which means that anyone can use it for their work.
 
 Copyright (c) 2021 Navit Choudhary
