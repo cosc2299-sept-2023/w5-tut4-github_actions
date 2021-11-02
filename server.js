@@ -2,14 +2,17 @@ require('dotenv').config()
 var createError = require('http-errors');
 var express = require("express")
 var cors = require("cors")
+var path = require('path')
 var app = express()
 var calculatorRouter = require('./routes/calculatorRoute');
+var userRoute = require('./routes/userRoute')
 app.use(express.static(__dirname+'/public'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors())
-
+var MongoConnect = require('./mongoConnect')
 app.use('/calculator', calculatorRouter);
+app.use('/user', userRoute);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -24,7 +27,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  // res.sendFile((__dirname+'/404.html'));
 });
 
 var port = process.env.port || 3000;
