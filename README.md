@@ -9,6 +9,7 @@ This is a very simple Node Express application that serves as a web server. This
 Open the project in visual studio code
 
 ```
+$ npm install
 $ npm run start
 ```
 
