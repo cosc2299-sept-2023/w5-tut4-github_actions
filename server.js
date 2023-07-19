@@ -10,7 +10,7 @@ app.use(express.static(__dirname+'/public'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors())
-var MongoConnect = require('./mongoConnect')
+//var MongoConnect = require('./mongoConnect')
 app.use('/calculator', calculatorRouter);
 app.use('/user', userRoute);
 
