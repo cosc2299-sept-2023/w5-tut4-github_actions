@@ -16,4 +16,4 @@ $ npm run start
 ## Copyrights
 This is a public project, which means that anyone can use it for their work.
 
-Copyright (c) 2021 Alessio Bonti
+Copyright (c) 2021 Alessio Bonti 
